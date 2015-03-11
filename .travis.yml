@@ -5,4 +5,3 @@ sudo: false
 otp_release:
   - R16B03
   - 17.1
-  - 17.2
