@@ -2,11 +2,9 @@ language: erlang
 
 sudo: required
 
-group: edge
+group: dev
 
 otp_release:
 - R16B03
 - 17.1
 - 17.3
-
-after_script: dpkg --get-selections | grep -v deinstall | awk '{ print $1 }'
