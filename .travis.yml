@@ -4,4 +4,4 @@ sudo: false
 
 otp_release: 17.5
 
-after_script: dpkg --get-selections | grep rabbitmq
+after_script: apt-cache show rabbitmq-server
