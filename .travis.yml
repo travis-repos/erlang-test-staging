@@ -2,7 +2,7 @@ language: erlang
 
 services: rabbitmq
 
-sudo: false
+sudo: required
 
 otp_release: 17.5
 
