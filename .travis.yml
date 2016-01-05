@@ -1,7 +1,9 @@
 language: erlang
 
+services: rabbitmq
+
 sudo: false
 
 otp_release: 17.5
 
-after_script: apt-cache show rabbitmq-server
+before_script: sudo rabbitmqctl status
