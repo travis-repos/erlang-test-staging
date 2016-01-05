@@ -4,6 +4,8 @@ services: rabbitmq
 
 sudo: required
 
+group: legacy
+
 otp_release: 17.5
 
 before_script: sudo rabbitmqctl status
