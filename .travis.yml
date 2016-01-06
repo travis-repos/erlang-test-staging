@@ -1,13 +1,11 @@
 language: erlang
 
-services: rabbitmq
-
 sudo: required
 
-group: legacy
+group: edge
 
-otp_release: 18.2.1
+otp_release: 17.5
 
 before_script:
-- sudo rabbitmqctl status
+- kerl help
 - erl -eval 'erlang:display(erlang:system_info(otp_release)), halt().' -noshell
