@@ -6,7 +6,7 @@ sudo: required
 
 group: legacy
 
-otp_release: 17.5
+otp_release: 18.2.1
 
 before_script:
 - sudo rabbitmqctl status
