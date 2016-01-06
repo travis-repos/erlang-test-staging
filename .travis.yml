@@ -7,5 +7,6 @@ group: edge
 otp_release: 17.5
 
 before_script:
+- find ~/.kerl -maxdepth 1 -type f
 - kerl list builds | if ! grep -q '18.2,18.2' ; then echo NO ; fi
 - erl -eval 'erlang:display(erlang:system_info(otp_release)), halt().' -noshell
